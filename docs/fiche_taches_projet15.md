@@ -39,7 +39,7 @@ Soutenance de 30 min : 15 min de présentation (de 10 à 20 min), 10 min de disc
 - [x] Lire les PDF de la mission et analyser les projets du parcours
 - [x] Rédiger la fiche de cadrage
 - [x] Faire valider le sujet par le mentor (validé le 24/11/2026)
-- [ ] Faire valider le support du portfolio (GitHub Pages ou PDF)
+- [x] Choisir le support du portfolio : **GitHub Pages** (24/11/2026)
 - [x] Créer le dépôt GitHub (`Formation-AI-Engineer/realisez-le-portfolio-d-AI-engineer`)
 
 ## Étape 1 — Données et versionnage (semaine 1, 6 h)
@@ -101,7 +101,7 @@ Soutenance de 30 min : 15 min de présentation (de 10 à 20 min), 10 min de disc
 
 - [ ] Carte mentale (Xmind ou Mermaid `mindmap`) : projets, compétences et niveaux, réflexivité, soft skills
 - [ ] Faire valider la carte mentale par le mentor
-- [ ] Portfolio : profil, compétences, projets 2 à 12, projet personnel, rapport
+- [ ] Portfolio : profil, compétences, projets 2 à 14, projet personnel, rapport → squelette MkDocs dans `portfolio/` (24/11/2026), à relire
 - [ ] Soigner l'ergonomie, l'accessibilité et la qualité visuelle
 
 ## Étape 7 — Soutenance (semaine 3, 5 h)

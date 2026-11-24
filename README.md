@@ -9,6 +9,7 @@ sans redéploiement. Les données sont versionnées avec **DVC**.
 
 > Cadrage : [`docs/fiche_cadrage_projet15.md`](docs/fiche_cadrage_projet15.md)
 > · Suivi : [`docs/fiche_taches_projet15.md`](docs/fiche_taches_projet15.md)
+> · Portfolio : <https://formation-ai-engineer.github.io/realisez-le-portfolio-d-AI-engineer/> (sources dans `portfolio/`)
 
 ## Architecture
 

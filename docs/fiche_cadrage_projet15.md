@@ -122,5 +122,5 @@ La charge du palier 1 est estimée à environ 60 h sur 3 semaines, dont 33 h pou
 
 - [x] Une extension des Projets 6 et 8 est-elle acceptée comme projet personnel, ou faut-il le repli Bike Sharing ? → **Validé par le mentor le 24/11/2026 (option A)**
 - [ ] Le palier 1 (local + vidéo) suffit-il, ou une démo en ligne est-elle attendue (palier 2 ou 3) ?
-- [ ] Quel support pour le portfolio : GitHub Pages ou PDF ?
+- [x] Quel support pour le portfolio : GitHub Pages ou PDF ? → **GitHub Pages**
 - [ ] Quel format est attendu pour le rapport de conduite de projet ?

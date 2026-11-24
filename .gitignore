@@ -35,3 +35,9 @@ logs/
 
 # PDF de l'énoncé OpenClassrooms
 Réalisez le portfolio*.pdf
+
+# Portfolio : site généré (publié par GitHub Actions)
+portfolio/site/
+
+# CV (contient des coordonnées personnelles)
+CV_*.pdf

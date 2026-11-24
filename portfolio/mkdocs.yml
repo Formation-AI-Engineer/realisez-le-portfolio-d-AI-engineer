@@ -1,0 +1,87 @@
+site_name: Lamine Camara — AI Engineer
+site_description: Portfolio d'AI Engineer de Lamine Camara (parcours OpenClassrooms) — projets, compétences, conduite de projet.
+site_author: Lamine Camara
+site_url: https://formation-ai-engineer.github.io/realisez-le-portfolio-d-AI-engineer/
+repo_url: https://github.com/Formation-AI-Engineer/realisez-le-portfolio-d-AI-engineer
+repo_name: Projet 15 sur GitHub
+edit_uri: ""
+docs_dir: docs
+copyright: © 2026 Lamine Camara
+
+theme:
+  name: material
+  language: fr
+  font:
+    text: Inter
+    code: JetBrains Mono
+  icon:
+    logo: material/brain
+    repo: fontawesome/brands/github
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      accent: teal
+      toggle:
+        icon: material/weather-night
+        name: Passer en mode sombre
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: indigo
+      accent: teal
+      toggle:
+        icon: material/weather-sunny
+        name: Passer en mode clair
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.top
+    - navigation.footer
+    - navigation.instant
+    - toc.follow
+    - content.tooltips
+    - search.highlight
+
+nav:
+  - Accueil: index.md
+  - Parcours: parcours.md
+  - Compétences: competences.md
+  - Projets: projets.md
+  - Projet personnel: projet-personnel.md
+  - Conduite de projet: rapport.md
+  - Carte mentale: carte-mentale.md
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/Formation-AI-Engineer
+      name: Projets sur GitHub
+    - icon: simple/huggingface
+      link: https://huggingface.co/lcamara
+      name: Démos sur Hugging Face
+
+extra_css:
+  - assets/extra.css
+
+markdown_extensions:
+  - abbr
+  - admonition
+  - attr_list
+  - def_list
+  - md_in_html
+  - tables
+  - toc:
+      permalink: true
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
