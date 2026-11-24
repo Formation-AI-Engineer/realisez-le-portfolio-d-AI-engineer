@@ -1,0 +1,57 @@
+[project]
+name = "boucle-mlops-scoring"
+version = "0.1.0"
+description = "Projet 15 — boucle MLOps fermée sur le scoring crédit Prêt à Dépenser (dérive → réentraînement → champion/challenger → MLflow Model Registry)"
+readme = "README.md"
+requires-python = ">=3.10,<3.13"
+
+dependencies = [
+    # --- Modèle (repris des Projets 6 et 8) ---
+    "lightgbm==4.6.0",
+    "scikit-learn==1.7.2",
+    "pandas>=2.0.0",
+    "numpy>=1.26.0",
+    "pyarrow>=23.0.1",
+    # --- Cycle de vie du modèle (suivi + Model Registry) ---
+    "mlflow>=3.0.0",
+    # --- API ---
+    "fastapi>=0.115.0",
+    "uvicorn[standard]>=0.30.0",
+    "pydantic>=2.7.0",
+    "python-dotenv>=1.0.0",
+    # --- Journal des prédictions (PostgreSQL) ---
+    "psycopg[binary]>=3.2",
+    "psycopg-pool>=3.2",
+]
+
+[project.optional-dependencies]
+# Dérive, dashboard et versionnage des données — non requis par l'image de l'API.
+monitoring = [
+    "evidently>=0.4.0",
+    "streamlit>=1.36.0",
+    "plotly>=5.22.0",
+    "dvc>=3.0.0",
+]
+dev = [
+    "pytest>=8.0.0",
+    "httpx>=0.27.0",
+    "ruff>=0.5.0",
+]
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B", "SIM"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-v"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["app", "mlops"]

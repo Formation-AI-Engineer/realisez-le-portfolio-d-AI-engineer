@@ -1,0 +1,37 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.ruff_cache/
+
+# Environnement virtuel
+.venv/
+
+# Secrets / config locale
+.env
+*.local
+
+# Données (versionnées par DVC, pas par Git)
+data/
+*.csv
+*.parquet
+
+# MLflow (backend SQLite + artefacts locaux)
+mlflow.db
+mlartifacts/
+mlruns/
+
+# Rapports et logs générés
+reports/
+logs/
+*.log
+
+# IDE / OS
+.idea/
+.vscode/
+.DS_Store
+.ipynb_checkpoints/
+
+# PDF de l'énoncé OpenClassrooms
+Réalisez le portfolio*.pdf
