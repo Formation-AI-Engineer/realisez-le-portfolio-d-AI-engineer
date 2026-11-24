@@ -1,12 +1,12 @@
-site_name: Lamine Camara — AI Engineer
-site_description: Portfolio d'AI Engineer de Lamine Camara (parcours OpenClassrooms) — projets, compétences, conduite de projet.
-site_author: Lamine Camara
+site_name: Lamine CAMARA — AI Engineer
+site_description: Portfolio d'AI Engineer de Lamine CAMARA (parcours OpenClassrooms) — projets, compétences, conduite de projet.
+site_author: Lamine CAMARA
 site_url: https://formation-ai-engineer.github.io/realisez-le-portfolio-d-AI-engineer/
 repo_url: https://github.com/Formation-AI-Engineer/realisez-le-portfolio-d-AI-engineer
 repo_name: Projet 15 sur GitHub
 edit_uri: ""
 docs_dir: docs
-copyright: © 2026 Lamine Camara
+copyright: © 2026 Lamine CAMARA
 
 theme:
   name: material

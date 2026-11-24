@@ -5,7 +5,7 @@
 
 ```mermaid
 mindmap
-  root((Lamine Camara<br/>AI Engineer))
+  root((Lamine CAMARA<br/>AI Engineer))
     Socle de développeur
       15 ans full stack
       Java, PHP, Angular

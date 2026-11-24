@@ -6,7 +6,7 @@ hide:
 
 <div class="hero" markdown>
 
-# Lamine Camara
+# Lamine CAMARA
 
 <p class="tagline">Développeur full stack depuis 15 ans · AI Engineer (OpenClassrooms, 2025–2026)</p>
 

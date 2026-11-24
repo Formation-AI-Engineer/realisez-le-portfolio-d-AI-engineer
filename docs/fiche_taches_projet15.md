@@ -17,7 +17,7 @@ Règle : on n'attaque un palier que lorsque le précédent est terminé et prés
 
 ## Livrables (énoncé)
 
-Un seul dépôt sur la plateforme : un zip `Titre_du_projet_Camara_Lamine` contenant `Camara_Lamine_1_portfolio_mmaaaa`. Ce livrable est un lien vers un portfolio en ligne ou un PDF. Il inclut :
+Un seul dépôt sur la plateforme : un zip `Titre_du_projet_CAMARA_Lamine` contenant `CAMARA_Lamine_1_portfolio_mmaaaa`. Ce livrable est un lien vers un portfolio en ligne ou un PDF. Il inclut :
 
 - le rapport de conduite de projet data ;
 - le lien vers le projet technique.
