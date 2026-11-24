@@ -19,6 +19,7 @@ dependencies = [
     "uvicorn[standard]>=0.30.0",
     "pydantic>=2.7.0",
     "python-dotenv>=1.0.0",
+    "pyyaml>=6.0",
     # --- Journal des prédictions (PostgreSQL) ---
     "psycopg[binary]>=3.2",
     "psycopg-pool>=3.2",

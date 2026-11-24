@@ -1,0 +1,7 @@
+# Paramètres du scénario simulé, suivis par DVC (étape prepare).
+scenario:
+  random_seed: 42
+  reference_size: 100000   # entraînement du premier modèle + référence de dérive
+  n_batches: 8             # lots « hebdomadaires »
+  batch_size: 25000
+  drift_start_batch: 3     # la dérive commence à ce lot, puis croît jusqu'au dernier

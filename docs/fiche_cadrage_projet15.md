@@ -57,7 +57,7 @@ Le périmètre est volontairement réduit pour tenir en 3 semaines. Chaque simpl
 
 | Inclus | Exclu (et pourquoi) |
 | --- | --- |
-| `application_train.csv` seul, environ 20 à 30 features (les top features déjà journalisées au P8) | Les 804 features et les 3,5 Go de jointures du P6 : le réentraînement serait trop lent |
+| `application_train.csv` seul, 21 features : 17 colonnes brutes encodées et 4 ratios métier du P6 (les 13 top features du P8 issues des tables jointes ne sont pas disponibles, voir la fiche de suivi) | Les 804 features et les 3,5 Go de jointures du P6 : le réentraînement serait trop lent |
 | LightGBM et seuil métier (FN = 10 × FP) repris du P6 | Recherche de nouveaux algorithmes |
 | Temps simulé : une référence puis 6 à 8 lots « hebdomadaires », avec une dérive progressive injectée dès le lot 3 | Vrai trafic de production |
 | Stack locale avec `docker compose` (MLflow, API, Postgres, dashboard) ; la mise en ligne se fait par paliers (voir ci-dessous) | Machine virtuelle cloud dédiée : trop de configuration (réseau, HTTPS) pour le délai |

@@ -47,4 +47,24 @@ cp .env.example .env.local
 uv run pytest
 ```
 
-*(Les commandes de lancement — MLflow, API, pipeline, dashboard — seront ajoutées au fil des étapes.)*
+## Données et scénario simulé
+
+Les données Home Credit (Kaggle) restent privées : elles sont versionnées par **DVC**, jamais par Git.
+
+```bash
+# 1. Déposer application_train.csv dans data/raw/ (ou le récupérer : uv run dvc pull)
+# 2. Construire la référence et les 8 lots (dérive injectée à partir du lot 3)
+uv run dvc repro
+```
+
+| Fichier | Contenu |
+|---|---|
+| `data/reference.parquet` | 100 000 demandes labellisées : premier entraînement et référence de dérive |
+| `data/batches/batch_XX.parquet` | Lot XX de 25 000 demandes, sans labels (ce que reçoit l'API) |
+| `data/batches/labels_XX.parquet` | Labels du lot XX, disponibles seulement au lot suivant |
+
+Les paramètres du scénario (tailles, graine, lot de début de dérive) sont dans `params.yaml`.
+Le scénario de dérive et sa calibration sont décrits dans la
+[fiche de suivi](docs/fiche_taches_projet15.md#étape-1--données-et-versionnage-semaine-1-6-h).
+
+*(Les commandes de lancement — MLflow, API, boucle, dashboard — seront ajoutées au fil des étapes.)*

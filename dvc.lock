@@ -1,0 +1,35 @@
+schema: '2.0'
+stages:
+  prepare:
+    cmd: uv run python -m mlops.data
+    deps:
+    - path: data/raw/application_train.csv
+      hash: md5
+      md5: 793a017f41fbac1dc28176b26dbab30e
+      size: 166133370
+    - path: mlops/config.py
+      hash: md5
+      md5: 24e1c2748da7bd05464a733ccc6a29fe
+      size: 2428
+    - path: mlops/data.py
+      hash: md5
+      md5: a5815c891afcaaa74a6d55d7d312efcc
+      size: 7893
+    params:
+      params.yaml:
+        scenario:
+          random_seed: 42
+          reference_size: 100000
+          n_batches: 8
+          batch_size: 25000
+          drift_start_batch: 3
+    outs:
+    - path: data/batches
+      hash: md5
+      md5: 269cbbb389707919e5883e7df892c67e.dir
+      size: 15395962
+      nfiles: 16
+    - path: data/reference.parquet
+      hash: md5
+      md5: d822ecfcba9bfbb0cead32572a4bee08
+      size: 5905431

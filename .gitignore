@@ -12,10 +12,8 @@ __pycache__/
 .env
 *.local
 
-# Données (versionnées par DVC, pas par Git)
-data/
-*.csv
-*.parquet
+# Données : versionnées par DVC (fichiers .dvc, dvc.lock), pas par Git.
+# DVC écrit lui-même les .gitignore de data/.
 
 # MLflow (backend SQLite + artefacts locaux)
 mlflow.db

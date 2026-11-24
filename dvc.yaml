@@ -1,0 +1,13 @@
+stages:
+  prepare:
+    cmd: uv run python -m mlops.data
+    deps:
+      - data/raw/application_train.csv
+      - mlops/data.py
+      - mlops/config.py
+    params:
+      - params.yaml:
+          - scenario
+    outs:
+      - data/reference.parquet
+      - data/batches
