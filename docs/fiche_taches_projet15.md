@@ -55,13 +55,13 @@ Soutenance de 30 min : 15 min de présentation (de 10 à 20 min), 10 min de disc
 
 **D2 — Scénario de dérive (24/11/2026).** Scénario métier : le bureau de crédit externe change sa méthode de calcul de `EXT_SOURCE_2` et `EXT_SOURCE_3` (transformation `x ** (1 + 2 × intensité)`), et les montants suivent une inflation de 15 % à intensité maximale. L'intensité croît de 1/6 au lot 3 à 1 au lot 8. Les labels ne sont pas modifiés. Découpage : référence de 100 000 lignes, 8 lots de 25 000.
 
-Calibration (LightGBM entraîné sur la référence, challenger = référence + 2 derniers lots labellisés) :
+Calibration (LightGBM entraîné sur la référence, challenger = référence + 2 derniers lots labellisés), reproductible avec `uv run python scripts/calibrate_drift.py` :
 
 | Lot | AUC champion | Coût champion | KS du score (p) | AUC challenger | Coût challenger |
 |---|---|---|---|---|---|
 | 1 | 0,756 | 0,537 | 0,54 | — | — |
 | 2 | 0,757 | 0,537 | 0,66 | — | — |
-| 3 | 0,749 | 0,558 | < 10⁻¹⁷⁰ | 0,759 | 0,567 |
+| 3 | 0,749 | 0,557 | < 10⁻¹⁷⁰ | 0,758 | 0,567 |
 | 4 | 0,742 | 0,606 | ≈ 0 | 0,755 | 0,547 |
 | 5 | 0,724 | 0,661 | ≈ 0 | 0,744 | 0,568 |
 | 6 | 0,712 | 0,700 | ≈ 0 | 0,743 | 0,559 |
